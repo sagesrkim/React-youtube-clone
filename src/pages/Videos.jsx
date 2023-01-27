@@ -12,14 +12,13 @@ export default function Videos() {
         error, 
         data: videos, 
     } = useQuery(
-        ['videos', keyword], () =>  youtube.search(keyword));
+        ['videos', keyword], () =>  youtube.search(keyword), { staleTime: 1000 * 60 * 1 });
     return (
         <>
-            <div>Videos {keyword ? `🔍${keyword}` : `🔥`}</div>
             {isLoading && <p>Loading...</p>}
             {error && <p>Something is wrong 😢</p>}
             {videos && 
-                <ul>
+                <ul className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 gap-y-4'>
                     {videos && videos.map((video) => <VideoCard key={video.id} video={video}/>)}
                 </ul>}
         </>

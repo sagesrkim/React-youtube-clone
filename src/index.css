@@ -2,6 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
+:root{
+  --color-bg-dark: #ffffff;
+  --color-bg:#Fdf7e6;
+  --color-text: #272727;
+}
+
+html.dark {
+  --color-bg: #161616f2;
+  --color-bg-dark: #161616f2;
+  --color-accent: #2294ff;
+  --color-text: #fdfffd;
+
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -12,7 +26,9 @@ body {
   width: 100vw;
   height: 100vh;
   @apply flex flex-col items-center;
-  @apply bg-zinc-900 text-gray-50;
+  color: var(--color-text);
+  background-color: var(--color-bg-dark);
+
 }
 
 #root {
