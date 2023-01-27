@@ -1,9 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import { BsYoutube, BsSearch } from 'react-icons/bs';
+import { HiMoon, HiSun } from 'react-icons/hi'
 import { Link, useNavigate, useParams } from 'react-router-dom';
+import { useDarkMode } from '../context/DarkmodeContext';
 
 
 export default function SearchHeader() {
+    const { darkMode, toggleDarkMode } = useDarkMode();
     const { keyword } = useParams();
     const navigate = useNavigate();
     const [text, setText] = useState('');
@@ -25,6 +28,10 @@ export default function SearchHeader() {
                     <BsSearch />
                 </button>
             </form>
+            <button onClick={toggleDarkMode} >
+            {!darkMode && <HiMoon />}
+            {darkMode && <HiSun />}
+        </button>
         </header>
     );
 }
