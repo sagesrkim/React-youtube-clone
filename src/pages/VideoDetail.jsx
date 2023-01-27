@@ -22,7 +22,7 @@ export default function VideoDetail() {
                 <div className='p-2'>
                     <h2 className='text-2xl font-bold'>{title}</h2>
                     <ChannelInfo id={channelId} name={channelTitle} />
-                    <pre className='whitespace-pre-wrap bg-zinc-100 opacity:50 rounded-2xl p-4'>{description}</pre>
+                    <pre className='whitespace-pre-wrap border border-zinc-300 opacity-70 rounded-2xl p-4'>{description}</pre>
                 </div>
             </article>
             <section className='basis-2/6'>
