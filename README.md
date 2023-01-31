@@ -26,7 +26,7 @@ soon
 ## 파일 구조
 ```
 🗂️src
-┣ 📂Context
+┣ 📂api
 ┃ ┣ 📄 FakeYoutubeclient.js
 ┃ ┣ 📄 Youtube.js
 ┃ ┣ 📄 YoutubeClient.js
