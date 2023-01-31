@@ -1,4 +1,4 @@
-# ToDoList
+# Youtube clone
 리액트 CRUD 기능을 구현해 만든 투두 앱입니다.
 
 ## 구현 화면
