@@ -1,5 +1,5 @@
 # Youtube clone
-리액트 CRUD 기능을 구현해 만든 투두 앱입니다.
+Youtube data API를 사용하여 만든 유튜브 클론코딩입니다.
 
 ## 구현 화면
 soon
